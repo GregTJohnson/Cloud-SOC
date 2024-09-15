@@ -72,7 +72,9 @@ Stop Time 2024-08-28 20:12:11
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
+
 Start Time 2024-08-29 20:51:46
+
 Stop Time	2024-08-30 20:51:46
 
 | Metric                   | Count

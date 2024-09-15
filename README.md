@@ -1,6 +1,5 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
-
+![Cloud Honeynet / SOC](https://i.imgur.com/xHMXEmP.jpg)
 ## Introduction
 
 In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, apply some security controls to harden the environment, measure metrics for another 24 hours, then show the results below. The metrics we will show are:
@@ -26,10 +25,10 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 - NIST SP 800-53 Revision 5 for Security Controls
 - NIST SP 800-61 Revision 2 for Incident Handling Guidance
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+![Architecture Diagram](https://i.imgur.com/oo6mAkb.jpeg)
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+![Architecture Diagram](https://i.imgur.com/ERtfZjM.jpeg)
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
@@ -46,9 +45,9 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/q56j7ar.png)<br>
+![Linux Syslog Auth Failures](https://i.imgur.com/CKbQDMo.png)<br>
+![Windows RDP/SMB Auth Failures](https://i.imgur.com/kbvGoCd.png)<br>
 
 ## Metrics Before Hardening / Security Controls
 
